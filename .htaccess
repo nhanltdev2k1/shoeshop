@@ -1,0 +1,33 @@
+##Options +FollowSymLinks All
+RewriteEngine On
+
+Options -Indexes
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule  ^trang-chu$ index.php
+
+# RewriteRule  ^chinhsach$ chitiet.php?thamso=gioi_thieu
+RewriteRule  ^gioithieu/(.*)-(.*)$ chitiet.php?thamso=chitiet_gioithieu&url=$1&id=$2
+
+# RewriteRule  ^danhmuc$ chitiet.php?thamso=tin_dichvu
+# RewriteRule  ^danhmuc/([a-zA-Z0-9_-]+)/page=([0-9]+)$ chitiet.php?thamso=tin_dichvu&url=$1&page=$2
+# RewriteRule  ^sanpham/(.*)$ chitiet.php?thamso=tin_dichvuct&url=$1&id=$2
+# RewriteRule  ^sanpham/([a-zA-Z0-9_-]+)/page=([0-9]+)$ chitiet.php?thamso=tin_dichvuct&url=$1&page=$3
+# RewriteRule  ^chitiet/(.*)-(.*)$ chitiet.php?thamso=chitiet_tindichvu&url=$1&id=$2
+
+RewriteRule  ^danhmuc$ chitiet.php?thamso=ma_sanpham
+RewriteRule  ^danhmuc/([a-zA-Z0-9_-]+)/page=([0-9]+)$ chitiet.php?thamso=ma_sanpham&url=$1&page=$2
+RewriteRule  ^sanpham/(.*)$ chitiet.php?thamso=ma_sanphamct&url=$1&id=$2
+RewriteRule  ^sanpham/([a-zA-Z0-9_-]+)/page=([0-9]+)$ chitiet.php?thamso=ma_sanphamct&url=$1&page=$3
+RewriteRule  ^chitiet/(.*)-(.*)$ chitiet.php?thamso=chitiet_masanpham&url=$1&id=$2
+
+RewriteRule  ^tintuc/$ chitiet.php?thamso=tin_tintuc
+RewriteRule  ^tintuc/([a-zA-Z0-9_-]+)/page=([0-9]+)$ chitiet.php?thamso=tin_tintuc&url=$1&page=$2
+RewriteRule  ^thongtin/(.*)-(.*)$ chitiet.php?thamso=chitiet_tintintuc&url=$1&id=$2
+
+# RewriteRule  ^chinh-sach$ chitiet.php?thamso=ma_sanpham
+# RewriteRule  ^tieu-chuan-(.*)-(.*)$ chitiet.php?thamso=chitiet_masanpham&url=$1&id=$2
+# RewriteRule  ^tieu-chuan-(.*)/(.*)$ chitiet.php?thamso=chitiet_masanpham&url=$1&id=$2
+
+RewriteRule  ^lien-he$ chitiet.php?thamso=lien_he
