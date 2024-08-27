@@ -69,7 +69,131 @@ include("title_meta/title_meta.php");
 </head>
 
 <body>
+	<div class="loading-overlay">
+		<div class="bounce-loader">
+			<div class="bounce1"></div>
+			<div class="bounce2"></div>
+			<div class="bounce3"></div>
+		</div>
+	</div>
+	<div class="mobile-menu-overlay"></div>
+	<div class="mobile-menu-container">
+		<div class="mobile-menu-wrapper">
+			<span class="mobile-menu-close"><i class="fa fa-times"></i></span>
+			<nav class="mobile-nav">
+				<ul class="mobile-menu">
+					<li><a href="demo32.html">Trang Chủ</a></li>
+					<li>
+						<a href="gioithieu/tong-quan-thong-tin-website">Giới Thiệu</a>
+					</li>
+					<li>
+						<a href="danhmuc/" class="sf-with-ul">Sản Phẩm</a>
+						<div class="megamenu megamenu-fixed-width">
+							<div class="row">
+								<div class="col-lg-6">
+									<ul class="submenu">
+										<?php
+										require('db.php');
+										$tv1 = "SELECT * FROM loai_ma_sanpham ORDER BY id ASC";
+										$tv_11 = mysqli_query($link, $tv1);
+										while ($tv_21 = mysqli_fetch_array($tv_11)) {
+											$id = $tv_21['id'];
+											$thuocloai = $tv_21['thuocloai'];
+											$name_url = strtolower($tv_21['name_url']);
+										?>
+											<li><a href="sanpham/<?php echo $name_url; ?>"><?php echo $thuocloai; ?></a></li>
+										<?php } ?>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="tintuc/">Tin Tức - Sự Kiện</a>
+					</li>
+					<li>
+						<a href="lien-he">Liên Hệ</a>
+					</li>
+					<ul class="mobile-menu">
+						<li><a href="#">Tài Khoản</a></li>
+						<li><a href="#">Yêu Thích</a></li>
+						<li><a href="#">Giỏ Hàng</a></li>
+						<li><a href="#" class="login-link">Đăng Nhập</a></li>
+					</ul>
+			</nav>
+			<form class="search-wrapper mb-2" action="#">
+				<input type="text" class="form-control mb-0" placeholder="Search..." required />
+				<button class="btn icon-search text-white bg-transparent p-0" type="submit"></button>
+			</form>
+			<div class="social-icons">
+				<a href="#" class="social-icon social-facebook icon-facebook" target="_blank">
+				</a>
+				<a href="#" class="social-icon social-twitter icon-twitter" target="_blank">
+				</a>
+				<a href="#" class="social-icon social-instagram icon-instagram" target="_blank">
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="newsletter-popup mfp-hide bg-img" id="newsletter-popup-form" style="background: #f1f1f1 no-repeat center/cover url(hinhmenu/banner/hype-popup.jpg)">
+		<div class="newsletter-popup-content">
+			<img src="hinhmenu/logo/logo_hype.png" alt="Logo" class="logo-newsletter" width="111" height="44">
+			<h2>Đăng ký nhận tin</h2>
+			<p>
+				Đăng ký danh sách gửi thư của Hype Store để nhận thông tin về các sản phẩm mới, ưu đãi đặc biệt và các chương trình khuyến mãi.
+			</p>
+			<form action="#">
+				<div class="input-group">
+					<input type="email" class="form-control" id="newsletter-email" name="newsletter-email" placeholder="Địa chỉ email của bạn" required />
+					<input type="submit" class="btn btn-primary" value="Gửi" />
+				</div>
+			</form>
+			<div class="newsletter-subscribe">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" class="custom-control-input" value="0" id="show-again" />
+					<label for="show-again" class="custom-control-label">
+						Không hiển thị lại popup này
+					</label>
+				</div>
+			</div>
+		</div>
+		<!-- End .newsletter-popup-content -->
 
+		<button title="Đóng (Esc)" type="button" class="mfp-close">
+			×
+		</button>
+	</div>
+
+	<!-- End .newsletter-popup -->
+
+	<div class="sticky-navbar">
+		<div class="sticky-info">
+			<a href="trang-chu">
+				<i class="icon-home"></i>Trang chủ
+			</a>
+		</div>
+		<div class="sticky-info">
+			<a href="danhmuc" class="">
+				<i class="icon-bars"></i>Sản Phẩm
+			</a>
+		</div>
+		<div class="sticky-info">
+			<a href="tintuc/" class="">
+				<i class="icon-business-book"></i>Tin Tức
+			</a>
+		</div>
+		<div class="sticky-info">
+			<a href="lien-he" class="">
+				<i class="icon-phone-1"></i>Liên Hệ
+			</a>
+		</div>
+		<div class="sticky-info">
+			<a href="#" class="">
+				<i class="icon-user-2"></i>Tài Khoản
+			</a>
+		</div>
+
+	</div>
 	<?php
 	include("xu_ly_post_get/xu_ly_post_get.php");
 	?>

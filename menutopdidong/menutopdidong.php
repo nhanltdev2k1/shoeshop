@@ -90,7 +90,7 @@
                     <a href="gioithieu/tong-quan-thong-tin-website">Giới Thiệu</a>
                 </li>
                 <li>
-                    <a href="danhmuc/" class="sf-with-ul">Sản Phẩm</a>
+                    <a href="danhmuc" class="sf-with-ul">Sản Phẩm</a>
                     <div class="megamenu megamenu-fixed-width">
                         <div class="row">
                             <div class="col-lg-6">

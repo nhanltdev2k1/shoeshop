@@ -41,7 +41,6 @@ include("title_meta/title_meta.php");
 	<meta property="og:image" content="https://lovestudiostore.xyz/hinhmenu/logo/logo.png" />
 	<meta property="og:description" content="<?php echo $dis; ?>" />
 
-	<link rel="icon" type="image/x-icon" href="assets/images/icons/favicon.png">
 	<script>
 		WebFontConfig = {
 			google: {
@@ -80,7 +79,7 @@ include("title_meta/title_meta.php");
 	?>
 
 	<?php
-	include('menutopdidong/menutopdidong.php');
+	include('menutopdidong/menutopchitiet.php');
 	?>
 
 	<?php
@@ -95,15 +94,13 @@ include("title_meta/title_meta.php");
 
 </body>
 <a id="scroll-top" href="#top" title="Top" role="button"><i class="icon-angle-up"></i></a>
-
 <!-- Plugins JS File -->
 <script src="siteshoeshop/assets/js/jquery.min.js"></script>
 <script src="siteshoeshop/assets/js/bootstrap.bundle.min.js"></script>
 <script src="siteshoeshop/assets/js/plugins.min.js"></script>
 <script src="siteshoeshop/assets/js/optional/imagesloaded.pkgd.min.js"></script>
 <script src="siteshoeshop/assets/js/optional/isotope.pkgd.min.js"></script>
-<script src="siteshoeshop/assets/js/jquery.appear.min.js"></script>
-
+<script src="siteshoeshop/assets/js/nouislider.min.js"></script>
 <!-- Main JS File -->
 <script src="siteshoeshop/assets/js/main.min.js"></script>
 
