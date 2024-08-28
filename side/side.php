@@ -30,7 +30,7 @@
       <i class="icon-shipping"></i>
 
       <div class="info-box-content">
-        <h4>MIỄN PHÍ VẬN CHUYỂN &amp; HOÀN TRẢ</h4>
+        <p style="color: #000; font-weight: bold;">MIỄN PHÍ VẬN CHUYỂN &amp; HOÀN TRẢ</p>
         <p class="font2">Miễn phí vận chuyển cho tất cả đơn hàng trên 199vnđ.</p>
       </div>
     </div>
@@ -41,7 +41,7 @@
       <i class="icon-money"></i>
 
       <div class="info-box-content">
-        <h4>ĐẢM BẢO HOÀN TIỀN</h4>
+        <p style="color: #000; font-weight: bold;">ĐẢM BẢO HOÀN TIỀN</p>
         <p class="font2">Đảm bảo hoàn tiền 100%.</p>
       </div>
     </div>
@@ -51,7 +51,7 @@
       <i class="icon-support"></i>
 
       <div class="info-box-content">
-        <h4>HỖ TRỢ TRỰC TUYẾN 24/7</h4>
+        <p style="color: #000; font-weight: bold;">HỖ TRỢ TRỰC TUYẾN 24/7</p>
         <p class="font2">Chúng tôi sẵn sàng hỗ trợ bạn bất kỳ lúc nào, suốt 24/7.</p>
       </div>
     </div>
@@ -61,7 +61,7 @@
     <div class="info-box info-box-icon-left">
       <i class="icon-secure-payment"></i>
       <div class="info-box-content">
-        <h4>THANH TOÁN BẢO MẬT</h4>
+        <p style="color: #000; font-weight: bold;">THANH TOÁN BẢO MẬT</p>
         <p class="font2">Thanh toán an toàn với mã hóa bảo mật tối đa.</p>
       </div>
     </div>

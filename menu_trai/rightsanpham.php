@@ -1,8 +1,8 @@
 <div class="sidebar-wrapper" data-sticky-sidebar-options='{"minWidth": 768, "offsetTop": 72}'>
     <div class="widget">
-        <h3 class="widget-title">
+        <p class="widget-title">
             <a data-toggle="collapse" href="#widget-body-8" role="button" aria-expanded="true" aria-controls="widget-body-8">Tin Tức Nổi Bật</a>
-        </h3>
+        </p>
         <div class="collapse show" id="widget-body-8">
             <div class="widget-body">
                 <?php

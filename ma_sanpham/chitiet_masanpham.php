@@ -1,3 +1,7 @@
+<h1 style="font-size:0px; margin: 0px; height:0px; color:#fff; margin: 0px; padding: 0px;"><a href='https://hypestore.site/'>Shop Bán Jordan Chính Hãng Ở Đà Nẵng</a></h1>
+<h2 style="font-size:0px; margin: 0px; height:0px; color:#fff; margin: 0px; padding: 0px;"><a href='https://hypestore.site/'>Địa Điểm Bán Giày MLB Ở Đà Nẵng</a></h2>
+<h2 style="font-size:0px; margin: 0px; height:0px; color:#fff; margin: 0px; padding: 0px;"><a href='https://hypestore.site/'>Shop Converse Chính Hãng Tại Đà Nẵng</a></h2>
+
 <body>
     <div class="page-wrapper">
         <main class="main">
@@ -27,7 +31,7 @@
                                     $ten = "$tv_2[tieude]";
                                     ?>
                                     <li class="breadcrumb-item"><a href="trang-chu">Trang Chủ</a></li>
-                                    <li class="breadcrumb-item"><a href="trang-chu">Trang Chủ</a></li>
+                                    <li class="breadcrumb-item"><a href="danhmuc">Danh Mục</a></li>
                                     <li class="breadcrumb-item active" aria-current="page"><?php echo "$ten" ?></li>
                                 </ol>
                             </nav>
@@ -85,7 +89,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-md-6 product-single-details">
-                                                <h1 class="product-title"><?php echo $tieude; ?></h1>
+                                                <p class="product-title"><?php echo $tieude; ?></p>
                                                 <div class="ratings-container">
                                                     <div class="product-ratings">
                                                         <span class="ratings" style="width:60%"></span>
@@ -96,16 +100,13 @@
                                                 <hr class="short-divider">
                                                 <div class="price-box">
                                                     <span class="product-price"><?php echo $gia_formatted; ?> vnđ</span>
-                                                </div><!-- End .price-box -->
-
+                                                </div>
                                                 <div class="product-desc">
                                                     <p>
                                                         <?php echo $mota; ?>
                                                     </p>
-                                                </div><!-- End .product-desc -->
-
+                                                </div>
                                                 <ul class="single-info-list">
-                                                    <!---->
                                                     <li>
                                                         Xuất Xứ:
                                                         <strong>Việt Nam</strong>
@@ -163,7 +164,6 @@
                                                         <label></label>
                                                         <a class="font1 text-uppercase clear-btn" href="#">Xoá hết</a>
                                                     </div>
-                                                    <!---->
                                                 </div>
 
                                                 <div class="product-action">
@@ -257,9 +257,8 @@
                                                                         <div class="ratings-container float-sm-right">
                                                                             <div class="product-ratings">
                                                                                 <span class="ratings" style="width:60%"></span>
-                                                                                <!-- End .ratings -->
                                                                                 <span class="tooltiptext tooltip-top"></span>
-                                                                            </div><!-- End .product-ratings -->
+                                                                            </div>
                                                                         </div>
 
                                                                         <span class="comment-by">
@@ -312,7 +311,7 @@
                                                             </div>
                                                         </div>
 
-                                                        <input type="submit" class="btn btn-primary" value="Submit">
+                                                        <input type="submit" class="btn btn-primary" value="Gửi Ngay">
 
                                                     </div>
                                                 </div>
@@ -345,7 +344,7 @@
             </div>
 
             <div class="products-section pt-0">
-                <h2 class="section-title ls-10">SẢN PHẨM LIÊN QUAN</h2>
+                <p class="h2-section-title">SẢN PHẨM LIÊN QUAN</p>
 
                 <div class="products-slider owl-carousel owl-theme dots-top dots-small 5col" data-owl-options="{
                         'dots': true
@@ -353,30 +352,18 @@
                     <?php
                     include_once("phan_trang.php");
                     require('db.php');
-
-                    // Ensure $thuocloai is defined
-                    $thuocloai = isset($thuocloai) ? $thuocloai : 0; // Default to 0 or appropriate value
+                    $thuocloai = isset($thuocloai) ? $thuocloai : 0;
                     $p = new pager;
                     $limit = 6;
                     $start = $p->findStart($limit);
-
-                    // Query to count the total number of records
                     $count_query = mysqli_query($link, "SELECT * FROM ma_sanpham WHERE thuocloai = " . $thuocloai);
                     $count = mysqli_num_rows($count_query);
                     $pages = $p->findPages($count, $limit);
-
-                    // Query to get products
                     $sql = mysqli_query($link, "SELECT * FROM (SELECT * FROM ma_sanpham WHERE thuocloai = $thuocloai ORDER BY id DESC LIMIT 100) AS latest_20 ORDER BY RAND() LIMIT 9");
-
-                    // Error handling
                     if (!$sql) {
                         echo "Error: " . mysqli_error($link);
                     }
-
-                    // Store IDs of related posts
                     $related_ids = [];
-
-                    // Display data
                     while ($tv_2 = mysqli_fetch_array($sql)) {
                         $link_hinh = "HinhCTSP/Hinhsanpham/" . $tv_2['hinhanh'];
                         $id = $tv_2['id'];
@@ -385,6 +372,8 @@
                         $tieude = $tv_2['tieude'];
                         $gia = $tv_2['gia'];
                         $gia_formatted = number_format($gia, 0, '.', '.');
+                        $mota_han = $tv_2['mota_han'];
+                        $mota_han_formatted = number_format($mota_han, 0, ',', '.');
                         $mota = $tv_2['mota'];
                         $ngay = $tv_2['ngay'];
                         $url = $tv_2['linkurl'];
@@ -392,7 +381,7 @@
                     ?>
                         <div class="product-default inner-quickview inner-icon">
                             <figure>
-                                <a href="demo32-product.html">
+                                <a href="<?php echo "$link"; ?>">
                                     <img src="<?php echo "$link_hinh"; ?>" width="265"
                                         height="265" alt="product" />
                                 </a>
@@ -400,334 +389,35 @@
                                     <a href="#" class="btn-icon btn-add-cart product-type-simple"><i
                                             class="icon-shopping-cart"></i></a>
                                 </div>
-                                <a href="ajax/product-quick-view.html" class="btn-quickview" title="Quick View">Quick
-                                    View</a>
                             </figure>
                             <div class="product-details">
                                 <div class="category-wrap">
                                     <div class="category-list">
-                                        <a href="demo32-shop.html" class="product-category">category</a>
+                                        <a href="demo32-shop.html" class="product-category">Nổi Bật</a>
                                     </div>
                                     <a href="wishlist.html" title="Wishlist" class="btn-icon-wish"><i
                                             class="icon-heart"></i></a>
                                 </div>
-                                <h3 class="product-title">
-                                    <a href="demo32-product.html">Black Shoes</a>
-                                </h3>
+                                <p class="product-title">
+                                    <a href="<?php echo "$link"; ?>"><?php echo "$tieude"; ?></a>
+                                </p>
                                 <div class="ratings-container">
                                     <div class="product-ratings">
                                         <span class="ratings" style="width:100%"></span>
-                                        <!-- End .ratings -->
                                         <span class="tooltiptext tooltip-top"></span>
-                                    </div><!-- End .product-ratings -->
-                                </div><!-- End .product-container -->
-                                <div class="price-box">
-                                    <span class="old-price">$90.00</span>
-                                    <span class="product-price">$70.00</span>
-                                </div><!-- End .price-box -->
-                            </div><!-- End .product-details -->
-                        </div>
-                    <?php } ?>
-                </div><!-- End .products-slider -->
-            </div><!-- End .products-section -->
-    </div>
-    </main><!-- End .main -->
-
-    <footer class="footer" data-appear-animation="fadeIn" data-appear-animation-delay="0"
-        data-appear-animation-duration="1s">
-        <div class="footer-top bg-dark">
-            <div class="container d-flex align-items-center justify-content-between flex-wrap">
-                <div class="widget-newsletter pl-3 d-md-flex align-items-center">
-                    <div class="widget-newsletter-info">
-                        <h5 class="widget-newsletter-title text-uppercase m-b-1 text-white">SIGN UP TO NEWSLETTER
-                        </h5>
-                        <p class="widget-newsletter-content font2 mb-0">Get all the latest information..</p>
-                    </div>
-                    <form action="#" class="mb-0">
-                        <div class="footer-submit-wrapper d-flex  mt-2 mb-1 mt-md-0 mb-md-0">
-                            <input type="email" class="form-control bg-dark" placeholder="Enter your e-mail address"
-                                size="40" required>
-                            <button type="submit" class="btn btn-dark btn-sm">Submit</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-
-            <div class="porto-content-box">
-                <h4>20$ OFF</h4>
-                <h3>GOPORTO</h3>
-                <span>USE COUPONS</span>
-
-                <a href="javascript:;" class="box-close">×</a>
-            </div>
-        </div>
-        <div class="container">
-            <div class="footer-middle">
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="info-box info-box-icon-left text-white justify-content-start">
-                            <i class="icon-shipping"></i>
-
-                            <div class="info-box-content">
-                                <h4>FREE SHIPPING &amp; RETURN</h4>
-                                <p class="font2">Free shipping on all orders over $99.</p>
-                            </div><!-- End .info-box-content -->
-                        </div><!-- End .info-box -->
-
-                        <div class="info-box info-box-icon-left text-white justify-content-start">
-                            <i class="icon-money"></i>
-
-                            <div class="info-box-content">
-                                <h4>MONEY BACK GUARANTEE</h4>
-                                <p class="font2">100% money back guarantee</p>
-                            </div><!-- End .info-box-content -->
-                        </div><!-- End .info-box -->
-
-                        <div class="info-box info-box-icon-left text-white justify-content-start">
-                            <i class="icon-support"></i>
-
-                            <div class="info-box-content">
-                                <h4>LIVE SUPPORT</h4>
-                                <p class="font2">Lorem ipsum dolor sit amet.</p>
-                            </div><!-- End .info-box-content -->
-                        </div><!-- End .info-box -->
-                    </div>
-                    <div class="col-md-6 col-lg-2">
-                        <div class="widget">
-                            <h3 class="widget-title">Account</h3>
-                            <div class="widget-content">
-                                <ul>
-                                    <li><a href="dashboard.html">My Account</a></li>
-                                    <li><a href="#">Track Your Order</a></li>
-                                    <li><a href="#">Payment Methods</a></li>
-                                    <li><a href="#">Shipping Guide</a></li>
-                                    <li><a href="#">FAQs</a></li>
-                                    <li><a href="#">Product Support</a></li>
-                                    <li><a href="#">Privacy</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="widget">
-                            <h3 class="widget-title">About</h3>
-                            <div class="widget-content">
-                                <ul>
-                                    <li><a href="about.html">About Porto</a></li>
-                                    <li><a href="#">Our Guarantees</a></li>
-                                    <li><a href="#">Terms And Conditions</a></li>
-                                    <li><a href="#">Privacy Policy</a></li>
-                                    <li><a href="#">Return Policy</a></li>
-                                    <li><a href="#">Intellectual Property Claims</a></li>
-                                    <li><a href="#">Site Map</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="widget-group">
-                            <div class="widget mb-3">
-                                <h3 class="widget-title">Follow Us</h3>
-                                <div class="widget-content">
-                                    <div class="social-icons ml-1">
-                                        <a href="#" class="social-icon social-facebook" target="_blank"
-                                            title="Facebook">
-                                            <i class="icon-facebook"></i>
-                                        </a>
-                                        <a href="#" class="social-icon social-twitter" target="_blank"
-                                            title="Twitter">
-                                            <i class="icon-twitter"></i>
-                                        </a>
-                                        <a href="#" class="social-icon social-instagram" target="_blank"
-                                            title="instagram">
-                                            <i class="icon-instagram"></i>
-                                        </a>
-
-                                        <a href="#" class="social-icon social-linkedin" target="_blank"
-                                            title="Linkedin">
-                                            <i class="fab fa-linkedin-in"></i>
-                                        </a>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="widget">
-                                <h3 class="widget-title">Payment Methods</h3>
-                                <div class="widget-content">
-                                    <img src="assets/images/demoes/demo32/payments_long.png" alt="payment image"
-                                        width="201" height="31">
+                                <div class="price-box">
+                                    <span class="old-price"><?php echo "$mota_han_formatted"; ?></span>
+                                    <span class="product-price"><?php echo "$gia_formatted"; ?></span>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    <?php } ?>
                 </div>
             </div>
-            <div class="footer-bottom flex-column flex-sm-row">
-                <p>Porto eCommerce. © 2021. All Rights Reserved</p>
-                <ul>
-                    <li><a href="#">Affiliates</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms & Conditions</a></li>
-                </ul>
-            </div>
-        </div>
-    </footer><!-- End .footer -->
-    </div><!-- End .page-wrapper -->
-
-    <div class="loading-overlay">
-        <div class="bounce-loader">
-            <div class="bounce1"></div>
-            <div class="bounce2"></div>
-            <div class="bounce3"></div>
-        </div>
     </div>
+    </main>
 
-    <div class="mobile-menu-overlay"></div><!-- End .mobil-menu-overlay -->
-
-    <div class="mobile-menu-container">
-        <div class="mobile-menu-wrapper">
-            <span class="mobile-menu-close"><i class="fa fa-times"></i></span>
-            <nav class="mobile-nav">
-                <ul class="mobile-menu">
-                    <li><a href="demo32.html">Home</a></li>
-                    <li>
-                        <a href="demo32-shop.html">Categories</a>
-                        <ul>
-                            <li><a href="category.html">Full Width Banner</a></li>
-                            <li><a href="category-banner-boxed-slider.html">Boxed Slider Banner</a></li>
-                            <li><a href="category-banner-boxed-image.html">Boxed Image Banner</a></li>
-                            <li><a href="https://www.portotheme.com/html/porto_ecommerce/category-sidebar-left.html">Left Sidebar</a></li>
-                            <li><a href="category-sidebar-right.html">Right Sidebar</a></li>
-                            <li><a href="category-off-canvas.html">Off Canvas Filter</a></li>
-                            <li><a href="category-horizontal-filter1.html">Horizontal Filter 1</a></li>
-                            <li><a href="category-horizontal-filter2.html">Horizontal Filter 2</a></li>
-                            <li><a href="#">List Types</a></li>
-                            <li><a href="category-infinite-scroll.html">Ajax Infinite Scroll<span
-                                        class="tip tip-new">New</span></a></li>
-                            <li><a href="category.html">3 Columns Products</a></li>
-                            <li><a href="category-4col.html">4 Columns Products</a></li>
-                            <li><a href="category-5col.html">5 Columns Products</a></li>
-                            <li><a href="category-6col.html">6 Columns Products</a></li>
-                            <li><a href="category-7col.html">7 Columns Products</a></li>
-                            <li><a href="category-8col.html">8 Columns Products</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="demo32-product.html">Products</a>
-                        <ul>
-                            <li>
-                                <a href="#" class="nolink">PRODUCT PAGES</a>
-                                <ul>
-                                    <li><a href="product.html">SIMPLE PRODUCT</a></li>
-                                    <li><a href="product-variable.html">VARIABLE PRODUCT</a></li>
-                                    <li><a href="product.html">SALE PRODUCT</a></li>
-                                    <li><a href="product.html">FEATURED & ON SALE</a></li>
-                                    <li><a href="product-sticky-info.html">WIDTH CUSTOM TAB</a></li>
-                                    <li><a href="product-sidebar-left.html">WITH LEFT SIDEBAR</a></li>
-                                    <li><a href="product-sidebar-right.html">WITH RIGHT SIDEBAR</a></li>
-                                    <li><a href="product-addcart-sticky.html">ADD CART STICKY</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#" class="nolink">PRODUCT LAYOUTS</a>
-                                <ul>
-                                    <li><a href="product-extended-layout.html">EXTENDED LAYOUT</a></li>
-                                    <li><a href="product-grid-layout.html">GRID IMAGE</a></li>
-                                    <li><a href="product-full-width.html">FULL WIDTH LAYOUT</a></li>
-                                    <li><a href="product-sticky-info.html">STICKY INFO</a></li>
-                                    <li><a href="product-sticky-both.html">LEFT & RIGHT STICKY</a></li>
-                                    <li><a href="product-transparent-image.html">TRANSPARENT IMAGE</a></li>
-                                    <li><a href="product-center-vertical.html">CENTER VERTICAL</a></li>
-                                    <li><a href="#">BUILD YOUR OWN</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">Pages<span class="tip tip-hot">Hot!</span></a>
-                        <ul>
-                            <li>
-                                <a href="wishlist.html">Wishlist</a>
-                            </li>
-                            <li>
-                                <a href="cart.html">Shopping Cart</a>
-                            </li>
-                            <li>
-                                <a href="checkout.html">Checkout</a>
-                            </li>
-                            <li>
-                                <a href="dashboard.html">Dashboard</a>
-                            </li>
-                            <li>
-                                <a href="login.html">Login</a>
-                            </li>
-                            <li>
-                                <a href="forgot-password.html">Forgot Password</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li>
-                        <a href="#">Elements</a>
-                        <ul class="custom-scrollbar">
-                            <li><a href="element-accordions.html">Accordion</a></li>
-                            <li><a href="element-alerts.html">Alerts</a></li>
-                            <li><a href="element-animations.html">Animations</a></li>
-                            <li><a href="element-banners.html">Banners</a></li>
-                            <li><a href="element-buttons.html">Buttons</a></li>
-                            <li><a href="element-call-to-action.html">Call to Action</a></li>
-                            <li><a href="element-countdown.html">Count Down</a></li>
-                            <li><a href="element-counters.html">Counters</a></li>
-                            <li><a href="element-headings.html">Headings</a></li>
-                            <li><a href="element-icons.html">Icons</a></li>
-                            <li><a href="element-info-box.html">Info box</a></li>
-                            <li><a href="element-posts.html">Posts</a></li>
-                            <li><a href="element-products.html">Products</a></li>
-                            <li><a href="element-product-categories.html">Product Categories</a></li>
-                            <li><a href="element-tabs.html">Tabs</a></li>
-                            <li><a href="element-testimonial.html">Testimonials</a></li>
-                        </ul>
-                    </li>
-                </ul>
-
-                <ul class="mobile-menu mt-2 mb-2">
-                    <li class="border-0">
-                        <a href="#">
-                            Special Offer!
-                        </a>
-                    </li>
-                    <li class="border-0">
-                        <a href="https://1.envato.market/DdLk5" target="_blank">
-                            Buy Porto!
-                            <span class="tip tip-hot">Hot</span>
-                        </a>
-                    </li>
-                </ul>
-
-                <ul class="mobile-menu">
-                    <li><a href="login.html">My Account</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="wishlist.html">My Wishlist</a></li>
-                    <li><a href="cart.html">Cart</a></li>
-                    <li><a href="login.html" class="login-link">Log In</a></li>
-                </ul>
-            </nav><!-- End .mobile-nav -->
-
-            <form class="search-wrapper mb-2" action="#">
-                <input type="text" class="form-control mb-0" placeholder="Search..." required />
-                <button class="btn icon-search text-white bg-transparent p-0" type="submit"></button>
-            </form>
-
-            <div class="social-icons">
-                <a href="#" class="social-icon social-facebook icon-facebook" target="_blank">
-                </a>
-                <a href="#" class="social-icon social-twitter icon-twitter" target="_blank">
-                </a>
-                <a href="#" class="social-icon social-instagram icon-instagram" target="_blank">
-                </a>
-            </div>
-        </div><!-- End .mobile-menu-wrapper -->
-    </div><!-- End .mobile-menu-container -->
-
-
+    </div>
 </body>

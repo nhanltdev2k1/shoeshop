@@ -31,7 +31,7 @@
                             <div class="col-lg-6 p-0">
                                 <div class="menu-banner menu-banner-2">
                                     <figure>
-                                        <img src="assets/images/menu-banner-1.jpg" alt="Menu banner" class="product-promo">
+                                        <img src="hinhmenu/banner/banner423702nc.webp" alt="Menu banner" class="product-promo">
                                     </figure>
                                 </div>
                             </div>
@@ -50,9 +50,9 @@
 
     <div class="category-widget">
         <div class="widget">
-            <h3 class="widget-title">
+            <p class="widget-title">
                 <a data-toggle="collapse" href="#widget-body-2" role="button" aria-expanded="true" aria-controls="widget-body-2">HÃNG GIÀY</a>
-            </h3>
+            </p>
 
             <div class="collapse show" id="widget-body-2">
                 <div class="widget-body">
@@ -73,9 +73,9 @@
             </div>
         </div>
         <div class="widget widget-price">
-            <h3 class="widget-title">
+            <p class="widget-title">
                 <a data-toggle="collapse" href="#widget-body-3" role="button" aria-expanded="true" aria-controls="widget-body-3">Lọc Theo Giá</a>
-            </h3>
+            </p>
 
             <div class="collapse show" id="widget-body-3">
                 <div class="widget-body">
@@ -95,9 +95,9 @@
             </div>
         </div>
         <div class="widget widget-brand">
-            <h3 class="widget-title">
+            <p class="widget-title">
                 <a data-toggle="collapse" href="#widget-body-7" role="button" aria-expanded="true" aria-controls="widget-body-7">Yêu Thích</a>
-            </h3>
+            </p>
 
             <div class="collapse show" id="widget-body-7">
                 <div class="widget-body pb-0">
@@ -107,16 +107,13 @@
                         <li><a href="#">Phụ Kiện</a></li>
                     </ul>
                 </div>
-                <!-- End .widget-body -->
             </div>
-            <!-- End .collapse -->
         </div>
-        <!-- End .widget -->
 
         <div class="widget widget-color">
-            <h3 class="widget-title">
+            <p class="widget-title">
                 <a data-toggle="collapse" href="#widget-body-6" role="button" aria-expanded="true" aria-controls="widget-body-6">Màu Sắc</a>
-            </h3>
+            </p>
             <div class="collapse show" id="widget-body-6">
                 <div class="widget-body">
                     <ul class="config-swatch-list flex-column">
@@ -138,9 +135,9 @@
         </div>
 
         <div class="widget widget-size">
-            <h3 class="widget-title">
+            <p class="widget-title">
                 <a data-toggle="collapse" href="#widget-body-5" role="button" aria-expanded="true" aria-controls="widget-body-5">Sizes Giày</a>
-            </h3>
+            </p>
             <div class="collapse show" id="widget-body-5">
                 <div class="widget-body">
                     <ul class="cat-list">

@@ -1,3 +1,6 @@
+    <h1 style="font-size:0px; margin: 0px; height:0px; color:#fff; margin: 0px; padding: 0px;"><a href='https://hypestore.site/'>Shop Bán Jordan Chính Hãng Ở Đà Nẵng</a></h1>
+    <h2 style="font-size:0px; margin: 0px; height:0px; color:#fff; margin: 0px; padding: 0px;"><a href='https://hypestore.site/'>Shop Giày MLB Chính Hãng Đà Nẵng</a></h2>
+    <h2 style="font-size:0px; margin: 0px; height:0px; color:#fff; margin: 0px; padding: 0px;"><a href='https://hypestore.site/'>Cửa Hàng Giày Converse Tại Đà Nẵng</a></h2>
     <?php
     include('phantrang/phantrang_dichvu.php');
     ?>
@@ -24,20 +27,8 @@
                                         <li class="breadcrumb-item active" aria-current="page">Danh Mục Sản Phẩm</li>
                                     </ol>
                                 </nav>
-                                <div class="home-slide banner-cat d-flex align-items-center mb-3" style="background-image: url('assets/images/demoes/demo32/banners/category_banner.jpg');">
-                                    <div class="slide-content">
-                                        <div class="content-left">
-                                            <div class="divide-txt">
-                                                <span class="font2 ls-0">New Brown Collection</span>
-                                                <div class="divide-line"></div>
-                                            </div>
-                                            <h2>Summer Sale</h2>
-                                            <h3 class="ls-0">30% OFF</h3>
-                                        </div>
-                                        <div class="image-info-group">
-                                            <a href="demo32-shop.html" class="btn mt-0">GET YOURS!</a>
-                                        </div>
-                                    </div>
+                                <div class="home-slide banner-cat d-flex align-items-center mb-3" style="background-image: url('hinhmenu/banner/banner-sanpham.webp');">
+
                                 </div>
 
                                 <div class="row products-group">
@@ -148,7 +139,7 @@
                                                                 <a href="#" class="btn-icon-wish"><i
                                                                         class="icon-wishlist-2"></i></a>
                                                             </div>
-                                                            <h3 class="product-title"> <a href="<?php echo "$link"; ?>"><?php echo "$tieude"; ?></a> </h3>
+                                                            <p class="product-title"> <a href="<?php echo "$link"; ?>"><?php echo "$tieude"; ?></a> </p>
                                                             <div class="ratings-container">
                                                                 <div class="product-ratings">
                                                                     <span class="ratings" style="width:100%"></span>

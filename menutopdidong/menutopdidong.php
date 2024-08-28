@@ -2,8 +2,8 @@
     <div class="header-top d-flex align-items-center">
         <div class="container">
             <div class="header-left mr-lg-0 mr-3 d-sm-flex d-none">
-                <h4 class="mb-0">Giảm 10% khi mua sắm giày chính hãng tại Hype Store. - <a href="lien-he">Shop
-                        Now!</a></h4>
+                <p class="mb-0">Giảm 10% khi mua sắm giày chính hãng tại Hype Store. - <a href="lien-he">Shop
+                        Now!</a></p>
             </div>
             <div class="header-right">
                 <ul class="d-lg-flex d-none">
@@ -112,7 +112,7 @@
                             <div class="col-lg-6 p-0">
                                 <div class="menu-banner menu-banner-2">
                                     <figure>
-                                        <img src="assets/images/menu-banner-1.jpg" alt="Menu banner" class="product-promo">
+                                        <img src="hinhmenu/banner/banner423702nc.webp" alt="Menu banner" class="product-promo">
                                     </figure>
                                 </div>
                             </div>

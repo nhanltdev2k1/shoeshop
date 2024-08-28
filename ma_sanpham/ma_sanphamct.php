@@ -1,6 +1,6 @@
-﻿<h1 style="font-size:0px; margin: 0px; height:0px; color:#fff; margin: 0px; padding: 0px;"><a href='https://lovestudiostore.xyz/'>Shop Thời Trang Nam Nữ Đà Nẵng</a></h1>
-<h2 style="font-size:0px; margin: 0px; height:0px; color:#fff; margin: 0px; padding: 0px;"><a href='https://lovestudiostore.xyz/'>Shop Áo Thun Oversize Đà Nẵng</a></h2>
-<h2 style="font-size:0px; margin: 0px; height:0px; color:#fff; margin: 0px; padding: 0px;"><a href='https://lovestudiostore.xyz/'>Shop Quần Dài Thời Trang Đà Nẵng</a></h2>
+﻿<h1 style="font-size:0px; margin: 0px; height:0px; color:#fff; margin: 0px; padding: 0px;"><a href='https://hypestore.site/'>Mua Nike Chính Hãng Ở Đà Nẵng</a></h1>
+<h2 style="font-size:0px; margin: 0px; height:0px; color:#fff; margin: 0px; padding: 0px;"><a href='https://hypestore.site/'>Giày Bóng Rổ Chính Hãng Tại Đà Nẵng</a></h2>
+<h2 style="font-size:0px; margin: 0px; height:0px; color:#fff; margin: 0px; padding: 0px;"><a href='https://hypestore.site/'>Shop Giày Air Force 1 Giá Tốt Ở Đà Nẵng</a></h2>
 <?php
 $thamso = $_GET['thamso'];
 $did = $_GET["url"];
@@ -109,20 +109,7 @@ class pager
                                     <li class="breadcrumb-item active" aria-current="page"><?php echo ucwords($ten); ?></li>
                                 </ol>
                             </nav>
-                            <div class="home-slide banner-cat d-flex align-items-center mb-3" style="background-image: url('assets/images/demoes/demo32/banners/category_banner.jpg');">
-                                <div class="slide-content">
-                                    <div class="content-left">
-                                        <div class="divide-txt">
-                                            <span class="font2 ls-0">New Brown Collection</span>
-                                            <div class="divide-line"></div>
-                                        </div>
-                                        <h2>Summer Sale</h2>
-                                        <h3 class="ls-0">30% OFF</h3>
-                                    </div>
-                                    <div class="image-info-group">
-                                        <a href="demo32-shop.html" class="btn mt-0">GET YOURS!</a>
-                                    </div>
-                                </div>
+                            <div class="home-slide banner-cat d-flex align-items-center mb-3" style="background-image: url('hinhmenu/banner/banner-sanpham.webp');">
                             </div>
 
                             <div class="row products-group">
@@ -192,10 +179,9 @@ class pager
                                             </div>
                                         </div>
                                     </nav>
-
                                     <div>
                                         <?php
-                                        $display = 12;
+                                        $display = 20;
                                         $p = new pager;
                                         $limit = 12;
                                         $start = $p->findStart($limit);
@@ -240,7 +226,7 @@ class pager
                                                                 </div>
                                                                 <a href='#' class='btn-icon-wish'><i class='icon-wishlist-2'></i></a>
                                                             </div>
-                                                            <h3 class='product-title'><a href='$link'>$tieude</a></h3>
+                                                            <p class='product-title'><a href='$link'>$tieude</a></p>
                                                             <div class='ratings-container'>
                                                                 <div class='product-ratings'>
                                                                     <span class='ratings' style='width:100%'></span>

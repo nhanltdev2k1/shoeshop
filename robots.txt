@@ -4,4 +4,4 @@ Disallow: /fckeditor/
 Disallow: */fckeditor/*
 Disallow: /feed/
 Disallow: /_notes/
-Sitemap: https://lovestudiostore.xyz/sitemap.xml
+Sitemap: https://hypestore.site/sitemap.xml

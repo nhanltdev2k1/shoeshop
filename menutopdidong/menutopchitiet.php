@@ -2,7 +2,7 @@
     <div class="header-top d-flex align-items-center">
         <div class="container">
             <div class="header-left mr-lg-0 mr-3 d-sm-flex d-none">
-                <h4 class="mb-0">Giảm 10% tại Hype Store - <a href="#">Mua Ngay!</a></h4>
+                <p class="mb-0">Giảm 10% tại Hype Store - <a href="#">Mua Ngay!</a></p>
             </div>
             <div class="header-right">
                 <ul class="d-lg-flex d-none">

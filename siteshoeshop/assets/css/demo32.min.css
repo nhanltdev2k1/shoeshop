@@ -980,7 +980,7 @@
 .owl-theme .owl-dots .owl-dot {
     display: inline-block;
     zoom: 1;
-    *display: inline;
+    display: inline;
 }
 
 .owl-theme .owl-dots .owl-dot span {
@@ -19093,7 +19093,6 @@ main.home .section-subtitle {
         left: 60%;
     }
 }
-@charset "UTF-8";
 .mt-1 {
   margin-top: 1rem !important;
 }
@@ -19861,7 +19860,7 @@ main.home .section-subtitle {
 .owl-theme .owl-dots .owl-dot {
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  display: inline;
 }
 .owl-theme .owl-dots .owl-dot span {
   position: relative;
@@ -34893,4 +34892,126 @@ main.home .section-subtitle {
 .phantrang a[title='Đến trang sau']:hover {
     background-color: #ddd;
     color: #000;
+}
+.h1-tukhoa {
+    padding: 0px;
+    margin: 0px;
+    font-size: 0px;
+    line-height: 0px;
+    color: #fff;
+}
+.h2-tukhoa-1 {
+    color: #000;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    line-height: 35px;
+}
+.h2-tukhoa-2 {
+    padding: 0px;
+    margin: 0px;
+    font-size: 0px;
+    line-height: 0px;
+    color: #fff;
+}
+.p-tukhoa {
+    color: #000;
+    font-size: 16px;
+    line-height: 29px;
+    font-weight: bold;
+}
+.div-tukhoa-1 {
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+.div-tukhoa-2 {
+    color: #000;
+    padding-bottom: 40px;
+    font-size: 18px;
+    font-family:' Arial', sans-serif;
+}
+.h2-section-title {
+    /* Font & Text */
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    letter-spacing: 0.15px;
+    line-height: 22px;
+    text-decoration: none solid rgb(40, 40, 40);
+    text-align: left;
+    text-indent: 0px;
+    text-transform: uppercase;
+    vertical-align: baseline;
+    white-space: normal;
+    word-spacing: 0px;
+
+    /* Color & Background */
+    background-attachment: scroll;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: none;
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    color: rgb(40, 40, 40);
+
+    /* Box */
+    height: 33px;
+    width: 1777.5px;
+    border-top: 0px none rgb(40, 40, 40);
+    border-right: 0px none rgb(40, 40, 40);
+    border-bottom: 1px solid rgb(231, 231, 231);
+    border-left: 0px none rgb(40, 40, 40);
+    margin: 0px 0px 24px;
+    padding: 0px 0px 10px;
+    max-height: none;
+    min-height: 0px;
+    max-width: none;
+    min-width: 0px;
+
+    /* Positioning */
+    position: static;
+    top: auto;
+    bottom: auto;
+    right: auto;
+    left: auto;
+    float: none;
+    display: block;
+    clear: none;
+    z-index: auto;
+
+    /* List */
+    list-style-image: none;
+    list-style-type: disc;
+    list-style-position: outside;
+
+    /* Table */
+    border-collapse: separate;
+    border-spacing: 0px 0px;
+    caption-side: top;
+    empty-cells: show;
+    table-layout: auto;
+
+    /* Miscellaneous */
+    overflow: visible;
+    cursor: auto;
+    visibility: visible;
+
+    /* Effects */
+    transform: none;
+    transition: all;
+    outline-offset: 0px;
+    box-sizing: border-box;
+    resize: none;
+    text-shadow: none;
+    text-overflow: clip;
+    word-wrap: normal;
+    box-shadow: none;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
 }

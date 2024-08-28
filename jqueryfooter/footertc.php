@@ -3,7 +3,7 @@
         <div class="container d-flex align-items-center justify-content-between flex-wrap">
             <div class="widget-newsletter pl-3 d-md-flex align-items-center">
                 <div class="widget-newsletter-info">
-                    <h5 class="widget-newsletter-title text-uppercase m-b-1 text-white">ĐĂNG KÝ NHẬN EMAIL</h5>
+                    <p class="widget-newsletter-title text-uppercase m-b-1 text-white" style="font-weight: 700;">ĐĂNG KÝ NHẬN EMAIL</p>
                     <p class="widget-newsletter-content font2 mb-0">Nhận tất cả thông tin mới nhất.</p>
                 </div>
                 <form action="#" class="mb-0">
@@ -16,7 +16,7 @@
         </div>
 
         <div class="porto-content-box">
-            <h3>GIẢM 20%</h3>
+            <p style="color: #000; font-size: 20px;">GIẢM 20%</p>
             <span>KHI MUA ONLINE</span>
 
             <a href="javascript:;" class="box-close">×</a>
@@ -30,8 +30,8 @@
                     <div class="info-box info-box-icon-left text-white justify-content-start">
                         <i class="icon-shipping"></i>
                         <div class="info-box-content">
-                            <h4>MIỄN PHÍ VẬN CHUYỂN &amp; TRẢ HÀNG</h4>
-                            <p class="font2">Miễn phí vận chuyển cho tất cả đơn hàng trên 199.000 vnđ.</p>
+                            <p class="widget-newsletter-title text-uppercase m-b-1 text-white" style="font-weight: 700;">MIỄN PHÍ VẬN CHUYỂN &amp; TRẢ HÀNG</p>
+                            <p class=" font2">Miễn phí vận chuyển cho tất cả đơn hàng trên 199.000 vnđ.</p>
                         </div>
                         <!-- End .info-box-content -->
                     </div>
@@ -41,7 +41,7 @@
                         <i class="icon-money"></i>
 
                         <div class="info-box-content">
-                            <h4>CAM KẾT HOÀN TIỀN</h4>
+                            <p class="widget-newsletter-title text-uppercase m-b-1 text-white" style="font-weight: 700;">CAM KẾT HOÀN TIỀN</p>
                             <p class="font2">Cam kết hoàn tiền 100%</p>
                         </div>
                         <!-- End .info-box-content -->
@@ -52,7 +52,7 @@
                         <i class="icon-support"></i>
 
                         <div class="info-box-content">
-                            <h4>HỖ TRỢ TRỰC TUYẾN</h4>
+                            <p class="widget-newsletter-title text-uppercase m-b-1 text-white" style="font-weight: 700;">HỖ TRỢ TRỰC TUYẾN</p>
                             <p class="font2">Chúng tôi luôn sẵn sàng hỗ trợ bạn.</p>
                         </div>
                         <!-- End .info-box-content -->
@@ -62,7 +62,7 @@
 
                 <div class="col-md-6 col-lg-2">
                     <div class="widget">
-                        <h3 class="widget-title">HÃNG GIÀY</h3>
+                        <p class="widget-title">HÃNG GIÀY</p>
                         <div class="widget-content">
                             <ul>
                                 <?php
@@ -83,7 +83,7 @@
 
                 <div class="col-md-6 col-lg-3">
                     <div class="widget">
-                        <h3 class="widget-title">Góc Tin Tức</h3>
+                        <p class="widget-title">Góc Tin Tức</p>
                         <div class="widget-content">
                             <ul>
                                 <?php
@@ -102,7 +102,7 @@
                                     $url = $row['linkurl'];
                                     $link = str_replace("?", "", strtolower("thongtin/$url"));
                                 ?>
-                                    <p class="p-text-footer"><a href="<?php echo "$link"; ?>"><?php echo "- $tieude_en"; ?></a></p><br>
+                                    <h3 class="p-text-footer"><a href="<?php echo "$link"; ?>"><?php echo "- $tieude_en"; ?></a></h3><br>
                                 <?php } ?>
                             </ul>
                         </div>
@@ -112,7 +112,7 @@
                 <div class="col-lg-3">
                     <div class="widget-group">
                         <div class="widget mb-3">
-                            <h3 class="widget-title">Theo Dõi Chúng Tôi</h3>
+                            <p class="widget-title">Theo Dõi Chúng Tôi</p>
                             <div class="widget-content">
                                 <div class="social-icons ml-1">
                                     <a href="#" class="social-icon social-facebook" target="_blank" title="Facebook">
@@ -133,7 +133,7 @@
                         </div>
 
                         <div class="widget">
-                            <h3 class="widget-title">Phương Thức Thanh Toán</h3>
+                            <p class="widget-title">Phương Thức Thanh Toán</p>
                             <div class="widget-content">
                                 <img src="hinhmenu/payments/payments_long.png" alt="payment image" width="201" height="31">
                             </div>

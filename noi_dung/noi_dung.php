@@ -1,3 +1,7 @@
+<h1 style="font-size:0px; margin: 0px; height:0px; color:#fff; margin: 0px; padding: 0px;"><a href='https://hypestore.site/'>Shop Bán Jordan Chính Hãng Ở Đà Nẵng</a></h1>
+<h2 style="font-size:0px; margin: 0px; height:0px; color:#fff; margin: 0px; padding: 0px;"><a href='https://hypestore.site/'>Mua Giày Converse Chính Hãng Đà Nẵng</a></h2>
+<h2 style="font-size:0px; margin: 0px; height:0px; color:#fff; margin: 0px; padding: 0px;"><a href='https://hypestore.site/'>Shop Bán Giày Bóng Rổ Chính Hãng Tại Đà Nẵng</a></h2>
+
 <body>
     <div class="page-wrapper">
         <main class="home main">
@@ -9,7 +13,7 @@
                             <span><strong>MẪU GIÀY</strong> HOT TREND</span>
                             <div class="divide-line"></div>
                         </div>
-                        <h3 class="section-subtitle">Shop Giày Hype Store tự hào mang đến cho bạn những sản phẩm giày hot trend nhất, cập nhật nhanh chóng các xu hướng thời trang mới nhất. Chúng tôi cam kết cung cấp các sản phẩm chất lượng cao với giá cả cạnh tranh và dịch vụ chăm sóc khách hàng tận tâm.</h3>
+                        <p class="section-subtitle">Shop Giày Hype Store tự hào mang đến cho bạn những sản phẩm giày hot trend nhất, cập nhật nhanh chóng các xu hướng thời trang mới nhất. Chúng tôi cam kết cung cấp các sản phẩm chất lượng cao với giá cả cạnh tranh và dịch vụ chăm sóc khách hàng tận tâm.</ơ>
                     </div>
 
                     <div class="row text-left product-ajax-grid">
@@ -53,7 +57,7 @@
                                             <a href="#" title="Add to Wishlist" class="btn-icon-wish"><i
                                                     class="icon-heart"></i></a>
                                         </div>
-                                        <h3 class="product-title"> <a href="<?php echo "$link"; ?>"><?php echo "$tieude"; ?></a> </h3>
+                                        <p class="product-title"> <a href="<?php echo "$link"; ?>"><?php echo "$tieude"; ?></a> </p>
                                         <div class="ratings-container">
                                             <div class="product-ratings">
                                                 <span class="ratings" style="width:100%"></span>
@@ -78,7 +82,7 @@
                             <span><strong>BỘ SƯU TẬP</strong> MÙA HÈ</span>
                             <div class="divide-line"></div>
                         </div>
-                        <h3 class="section-subtitle">Khám phá những sản phẩm mới nhất, hoàn hảo cho mùa hè này</h3>
+                        <p class="section-subtitle">Khám phá những sản phẩm mới nhất, hoàn hảo cho mùa hè này</p>
                     </div>
 
                     <div class="row grid">
@@ -98,7 +102,7 @@
                                 </figure>
 
                                 <div class="category-content content-white">
-                                    <h3>GIÀY NỮ</h3>
+                                    <p style="color: #fff; font-size: 3.2rem; font-weight: 700; font-family: 'Segoe Script'; line-height: 1.2;">GIÀY NỮ</p>
                                 </div>
                             </div>
                         </div>
@@ -118,7 +122,7 @@
                                 </figure>
 
                                 <div class="category-content content-white">
-                                    <h3>GIÀY NAM</h3>
+                                    <p style="color: #fff; font-size: 3.2rem; font-weight: 700; font-family: 'Segoe Script'; line-height: 1.2;">GIÀY NAM</p>
                                 </div>
                             </div>
                         </div>
@@ -142,7 +146,7 @@
                             <span><strong>MẪU GIÀY</strong> BÁN CHẠY NHẤT</span>
                             <div class="divide-line"></div>
                         </div>
-                        <h3 class="section-subtitle">Cập nhật ngay những mẫu giày hot nhất được săn đón nhiều nhất</h3>
+                        <p class="section-subtitle">Cập nhật ngay những mẫu giày hot nhất được săn đón nhiều nhất</p>
                     </div>
 
                     <div class="product-panel owl-carousel owl-theme show-nav-hover mb-0" data-toggle="owl" data-owl-options="{
@@ -197,7 +201,7 @@
                                         <a href="#" title="Wishlist" class="btn-icon-wish"><i
                                                 class="icon-heart"></i></a>
                                     </div>
-                                    <h3 class="product-title"> <a href="<?php echo "$link"; ?>"><?php echo "$tieude"; ?></a> </h3>
+                                    <p class="product-title"> <a href="<?php echo "$link"; ?>"><?php echo "$tieude"; ?></a> </p>
                                     <div class="ratings-container">
                                         <div class="product-ratings">
                                             <span class="ratings" style="width:100%"></span>
@@ -220,7 +224,7 @@
                             <span><strong>PHỤ KIỆN</strong> CHÍNH HÃNG</span>
                             <div class="divide-line"></div>
                         </div>
-                        <h3 class="section-subtitle">Shop Giày Hype Store tự hào mang đến những phụ kiện chính hãng chất lượng hàng đầu.</h3>
+                        <p class="section-subtitle">Shop Giày Hype Store tự hào mang đến những phụ kiện chính hãng chất lượng hàng đầu.</p>
                     </div>
                     <div class="row text-left product-ajax-grid">
                         <?php
@@ -263,7 +267,7 @@
                                             <a href="#" title="Add to Wishlist" class="btn-icon-wish"><i
                                                     class="icon-heart"></i></a>
                                         </div>
-                                        <h3 class="product-title"> <a href="<?php echo "$link"; ?>"><?php echo "$tieude"; ?></a> </h3>
+                                        <p class="product-title"> <a href="<?php echo "$link"; ?>"><?php echo "$tieude"; ?></a> </p>
                                         <div class="ratings-container">
                                             <div class="product-ratings">
                                                 <span class="ratings" style="width:100%"></span>
